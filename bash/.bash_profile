@@ -1,9 +1,12 @@
+###########################################
+# Feel free to make your own changes below.
+###########################################
+
 # `cd up` Ex. cd.. 2: Takes two directory level up
-cd.. ()
-{
+cd.. ()  {
     local old="$PWD"
     for i in $(seq "${1:-1}"); do
         cd ..
     done
     OLDPWD="$old"
-} 
+}
